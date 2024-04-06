@@ -1,0 +1,57 @@
+/* GOOGLE FONTS */
+
+
+/* VARIABLES CSS */
+:root {
+    /* base */
+    --font-family: ;
+    --font-size: ;
+    --background-color: ;
+    --color: ;
+
+    /* header */
+    --title-color: ;
+    --title-weight: ;
+}
+
+/* BASE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--title-weight);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================== HEADER ==================== */
+

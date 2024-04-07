@@ -354,6 +354,10 @@ main .icons #moon {
         transform: translateX(-100%);
     }
 
+    main {
+        padding-top: 50px;
+    }
+
     main .icons #burger-menu {
         display: block;
     }
@@ -405,6 +409,15 @@ main .icons #moon {
     .btn-slider {
         display: flex;
     }
-    
+}
 
+@media screen and (max-width: 500px) {
+
+    .description h1 {
+        font-size: 2rem;
+    }
+    
+    .description h2 {
+        font-size: 1.5rem;
+    }
 }

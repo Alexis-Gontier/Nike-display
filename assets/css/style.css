@@ -12,11 +12,15 @@
     /* header */
     --header-width: 280px;
     --header-background: #242424;
+
+    --breadcrumb: #d8d8d8;
 }
 
 body.darkmode {
-    --header-background: #fff;
-    --background-color: #242424;
+    --header-background: #a1a1a1;
+    --background-color: #1a1a1a;
+    --color: #dddddd;
+    --breadcrumb: #313131;
 }
 
 /* BASE */
@@ -64,7 +68,7 @@ img {
 header .line {
     width: 100%;
     height: .5px;
-    background-color: #fff;
+    background-color: var(--background-color);
 }
 
 header {
@@ -137,7 +141,7 @@ header .nav-link:hover {
 
 header .nav-link p {
     text-transform: capitalize;
-    color: #fff;
+    color: var(--background-color);
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -180,7 +184,7 @@ main .icons #moon {
     top: 30px;
     left: var(--header-width);
     padding: .5rem 1rem;
-    background-color: #d8d8d8;
+    background-color: var(--breadcrumb);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,13 +320,13 @@ main .icons #moon {
 }
 
 .description .btns a:first-child {
-    border: 2px solid #000;
+    border: 2px solid var(--color);
 }
 
 .description .btns a:last-child {
-    background-color: #000;
-    color: #fff;
-    border: 2px solid #000;
+    background-color: var(--color);
+    color: var(--background-color);
+    border: 2px solid var(--color);
 }
 
 .description .info h3 {

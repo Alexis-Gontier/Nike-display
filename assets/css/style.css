@@ -206,6 +206,7 @@ main .icons #moon {
 
 /* SLIDER */
 .slider {
+    position: relative;
     align-items: center;
 }
 
@@ -240,6 +241,30 @@ main .icons #moon {
 
 .slider .img-slider img:hover {
     background-color: #d1d1d1;
+}
+
+/* SLIDER RESPONSIVE */
+.btn-slider {
+    position: absolute;
+    top: 50%;
+    /* background-color: red; */
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.btn-slider i {
+    padding: 15px 18px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-slider i:hover {
+    opacity: .8;
 }
 
 
@@ -317,10 +342,9 @@ main .icons #moon {
 
 
 
-
 /* ==================== MEDIA QUERYS ==================== */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
 
     header {
         transform: translateX(-100%);
@@ -372,6 +396,10 @@ main .icons #moon {
 
     .slider .img-slider {
         display: none;
+    }
+    
+    .btn-slider {
+        display: flex;
     }
     
 
